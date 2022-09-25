@@ -71,16 +71,6 @@
   column-gap: 50px;
 }
 
-.contacts-item__icon-mail,
-.contacts-item__icon-smartphone {
-  display: inline-block;
-
-  margin-right: 10px;
-  fill: var(--grey-color);
-
-  transition: fill var(--trans-dur-time-fun);
-}
-
 .contacts-item__link-mail,
 .contacts-item__link-tel {
   display: flex;
@@ -99,6 +89,20 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-    fill: var(--accent-color);
   }
 }
+
+.contacts-item__icon-mail,
+.contacts-item__icon-smartphone {
+  display: inline-block;
+
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+// .contacts-item__icon-mail:hover,
+// .contacts-item__icon-smartphone:hover,
+// .contacts-item__icon-mail:focus,
+// .contacts-item__icon-smartphone:focus {
+//   fill: var(--accent-color);
+// }

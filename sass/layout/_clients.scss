@@ -32,7 +32,7 @@
   border-radius: 4px;
   fill: var(--icon-color);
 
-  transition: background-color var(--trans-dur-time-fun),
+  transition: border-color var(--trans-dur-time-fun),
     fill var(--trans-dur-time-fun);
 
   &:hover,
