@@ -1,43 +1,43 @@
 .clients-section {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container-clients {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .clients-title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.clients {
-    display: flex;
-    gap: 30px;
+.clients-list {
+  display: flex;
+  gap: 30px;
 }
 
-.bg-logo {
-    width: 170px;
-    height: 92px;
+.client-item {
+  width: 170px;
+  height: 92px;
 }
 
-.icon-client {
-    height: 100%;
-    width: 100%;
+.client-link {
+  height: 100%;
+  width: 100%;
 
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    fill: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
 
-    transition: background-color var(--trans-dur-time-fun),
-        fill var(--trans-dur-time-fun);
-}
+  transition: background-color var(--trans-dur-time-fun),
+    fill var(--trans-dur-time-fun);
 
-.bg-logo:hover .icon-client,
-.bg-logo:focus .icon-client {
+  &:hover,
+  &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+  }
 }

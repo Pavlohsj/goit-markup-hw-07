@@ -1,61 +1,51 @@
 .menu {
-    background-color: var(--white-color);
-    border-bottom: 1px solid var(--border-header-color);
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--border-header-color);
 }
 
 .menu-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-navigation {
-    display: flex;
+  display: flex;
 }
 
-.logo {
-    color: var(--main-black);
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    margin-right: 92px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.logo__text_blue {
-    color: var(--accent-color);
+.header-logo {
+  color: var(--main-black);
+  margin-right: 92px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .navigation-list {
-    display: flex;
-    column-gap: 50px;
-    height: 100%;
+  display: flex;
+  column-gap: 50px;
+  height: 100%;
 }
 
 .navigation-list__item__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    position: relative;
+  position: relative;
 
-    color: var(--main-black);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  color: var(--main-black);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-    transition: color var(--trans-dur-time-fun);
+  transition: color var(--trans-dur-time-fun);
 }
 
 .navigation-list__item__link.current {
-    color: var(--accent-color);
-}
+  color: var(--accent-color);
 
-.navigation-list__item__link.current::after {
+  &::after {
     content: "";
 
     position: absolute;
@@ -68,51 +58,52 @@
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
+  }
 }
 
-.menu-contacts {
-    display: flex;
-    column-gap: 50px;
+.contacts-list {
+  display: flex;
+  column-gap: 50px;
 }
 
-.menu-contacts__icon-mail,
-.menu-contacts__icon-smartphone {
-    display: inline-block;
+.contacts-item .contacts-item__icon-mail,
+.contacts-item__icon-smartphone {
+  display: inline-block;
 
-    margin-right: 10px;
-    fill: var(--grey-color);
+  margin-right: 10px;
+  fill: var(--grey-color);
 
-    transition: fill var(--trans-dur-time-fun);
+  transition: fill var(--trans-dur-time-fun);
 }
 
-.menu-contacts__link-mail,
-.menu-contacts__link-tel {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
+.contacts-item__link-mail,
+.contacts-item__link-tel {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
 
-    color: var(--grey-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-    transition: color var(--trans-dur-time-fun);
+  transition: color var(--trans-dur-time-fun);
 }
 
 .navigation-list__item__link:hover,
 .navigation-list__item__link:focus,
-.menu-contacts__link-mail:hover,
-.menu-contacts__link-mail:focus,
-.menu-contacts__link-tel:hover,
-.menu-contacts__link-tel:focus {
-    color: var(--accent-color);
+.contacts-item__link-mail:hover,
+.contacts-item__link-mail:focus,
+.contacts-item__link-tel:hover,
+.contacts-item__link-tel:focus {
+  color: var(--accent-color);
 }
 
-.menu-contacts__link-mail:hover .menu-contacts__icon-mail,
-.menu-contacts__link-mail:focus .menu-contacts__icon-mail,
-.menu-contacts__link-tel:hover .menu-contacts__icon-smartphone,
-.menu-contacts__link-tel:focus .menu-contacts__icon-smartphone {
-    fill: var(--accent-color);
+.contacts-item__link-mail:hover .contacts-item__icon-mail,
+.contacts-item__link-mail:focus .contacts-item__icon-mail,
+.contacts-item__link-tel:hover .contacts-item__icon-smartphone,
+.contacts-item__link-tel:focus .contacts-item__icon-smartphone {
+  fill: var(--accent-color);
 }
