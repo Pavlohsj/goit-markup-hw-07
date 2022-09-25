@@ -1,0 +1,118 @@
+.menu {
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--border-header-color);
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-navigation {
+    display: flex;
+}
+
+.logo {
+    color: var(--main-black);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-right: 92px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo__text_blue {
+    color: var(--accent-color);
+}
+
+.navigation-list {
+    display: flex;
+    column-gap: 50px;
+    height: 100%;
+}
+
+.navigation-list__item__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    position: relative;
+
+    color: var(--main-black);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color var(--trans-dur-time-fun);
+}
+
+.navigation-list__item__link.current {
+    color: var(--accent-color);
+}
+
+.navigation-list__item__link.current::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: block;
+
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.menu-contacts {
+    display: flex;
+    column-gap: 50px;
+}
+
+.menu-contacts__icon-mail,
+.menu-contacts__icon-smartphone {
+    display: inline-block;
+
+    margin-right: 10px;
+    fill: var(--grey-color);
+
+    transition: fill var(--trans-dur-time-fun);
+}
+
+.menu-contacts__link-mail,
+.menu-contacts__link-tel {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+
+    color: var(--grey-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color var(--trans-dur-time-fun);
+}
+
+.navigation-list__item__link:hover,
+.navigation-list__item__link:focus,
+.menu-contacts__link-mail:hover,
+.menu-contacts__link-mail:focus,
+.menu-contacts__link-tel:hover,
+.menu-contacts__link-tel:focus {
+    color: var(--accent-color);
+}
+
+.menu-contacts__link-mail:hover .menu-contacts__icon-mail,
+.menu-contacts__link-mail:focus .menu-contacts__icon-mail,
+.menu-contacts__link-tel:hover .menu-contacts__icon-smartphone,
+.menu-contacts__link-tel:focus .menu-contacts__icon-smartphone {
+    fill: var(--accent-color);
+}
